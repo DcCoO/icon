@@ -3,9 +3,9 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\components",
-    "\\src\\firebase"
+    "\\src\\images\\page1",
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\ImageUpload.jsx",
+  "SelectedNode": "\\src\\pages\\List.js",
   "PreviewInSolutionExplorer": false
 }

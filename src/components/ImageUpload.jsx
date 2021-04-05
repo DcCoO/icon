@@ -21,13 +21,13 @@ class ImageUpload extends Component {
         listRef.listAll().then(function (res) {
             res.items.forEach(function (itemRef) {
 
-
-
+                console.log(itemRef);
+                /*
                 itemRef.getDownloadURL().then(function (url) {
                     console.log(url);
                 }).catch(function (error) {
                     // Handle any errors
-                });
+                });*/
 
 
 
