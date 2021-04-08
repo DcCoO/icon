@@ -1,0 +1,10 @@
+.styleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    vertical-align: middle;
+}
+
+.styleButton {
+    right: 5px;
+}

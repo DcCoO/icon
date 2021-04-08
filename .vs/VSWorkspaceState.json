@@ -3,9 +3,10 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\images\\page1",
+    "\\src\\components",
+    "\\src\\images",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\List.js",
+  "SelectedNode": "\\src\\style.css",
   "PreviewInSolutionExplorer": false
 }
