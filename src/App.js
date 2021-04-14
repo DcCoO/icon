@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import Nav from "./Nav";
 import World from "./pages/World";
@@ -22,21 +23,5 @@ export default function App() {
             <Redirect to="/" />
         </Router>
     );
-    
-
-
-    /*
-    return (
-        <Router>
-            <div className = "App">
-                <Nav />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/file" exact component={File} />
-                    <Route path="/list" exact component={List} />
-                </Switch>
-            </div>
-        </Router>
-    );*/
 }
 

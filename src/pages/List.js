@@ -2,10 +2,11 @@ import React, { useEffect, useState, Component} from "react";
 import { Link } from "react-router-dom";
 import {storage} from '../firebase';
 import '../style.css';
+import SizePopup from '../components/SizePopup';
 
 export default function List() {
 
-
+    
     var listRef = storage.ref('images');
     const [data, setData] = useState([]);
     const [refsUrls,setRefsUrls] = useState([]);
@@ -47,23 +48,40 @@ export default function List() {
     console.log(data);
 
     var styleImg = {
-        height: 40,
-        width: 40
+        height: 50,
+        width: 50
     }
 
-    var style
+    var styleText = {
+        width: 150
+    }
+
+
+    const bg = "BG_1_.png";
+    const divStyle = {
+        backgroundImage: `url(${bg})`
+    }
+
+    const [sizePopup, setSizePopup] = useState(false);
 
     
 
     return (
-    <>
-        {data.map(item => 
-                <div class="styleDiv">
-                <img src={item.refUrl} style={styleImg}/>
-                <span key={item.name}>{item.name} </span> 
-                <button class="styleButton">Button</button> 
-            </div>)}
-    </>
+    <div>
+        <div style={divStyle}>
+            {data.map(item => 
+                    <div class="styleDiv">
+                    <img src={item.refUrl} style={styleImg}/>
+                    <span key={item.name} style={styleText}>{item.name} </span> 
+                    <button class="styleButton" onClick={()=>setSizePopup(true)}>escolher arquivo</button> 
+                    <button class="styleButton">substituir</button> 
+                </div>)}
+        </div>
+        <SizePopup trigger={sizePopup} setTrigger={setSizePopup}>
+	        <h3>Erro</h3>
+	        <p>tamanho de imagem incorreto</p>
+        </SizePopup>
+    </div>
 
     );
 
