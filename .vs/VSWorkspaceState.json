@@ -5,8 +5,9 @@
     "\\src",
     "\\src\\components",
     "\\src\\images",
+    "\\src\\images\\page2",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\SizePopup.js",
+  "SelectedNode": "\\src\\components\\ImageUpload.jsx",
   "PreviewInSolutionExplorer": false
 }

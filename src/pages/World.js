@@ -7,6 +7,8 @@ import Girl from "../images/page1/mensagem.png";
 import { Container, Row , Col } from 'react-bootstrap';
 import '../style.css';
 
+
+
 export default function World() {
 
     const navStyle = {
@@ -56,7 +58,7 @@ export default function World() {
                     </Link>
                 </Col>
                 <Col>
-                    <Link style={navStyle} to="/file" onClick={setWorld2}>
+                    <Link style={navStyle} to="/file" onClick={setWorld3}>
                         <img className="styleButton" src={Button3} />
                     </Link>
                 </Col>

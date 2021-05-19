@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 import Girl2 from "../images/page2/mensagem2.png";
 import Voltar from "../images/page2/bt_voltar.png";
-import Botao from "../images/page2/bt_substituir_ativo.png";
+import Btn_AI from "../images/page2/bt_activity_icon.png";
+import Btn_Audio from "../images/page2/bt_audio.png";
+import Btn_Video from "../images/page2/bt_bloq_video.png";
+import Btn_Image from "../images/page2/bt_content image.png";
 import { Container, Row , Col } from 'react-bootstrap';
 
 import "../style.css"
@@ -23,11 +26,11 @@ export default function File() {
         return "";
     }
 
-    var estilao = { fontSize: 60};
+    var estilao = { fontSize: 60, color: "#ffffff"};
 
     return (
           
-        <Container fluid>
+        <Container fluid className="fileRow2">
             <Row className="fileRow1">                
                 <Col>
                     <Link to="/">
@@ -45,25 +48,27 @@ export default function File() {
                 </Col>
             </Row>
 
-            <Row className="fileRow2">                
-                <Col>
-                    <Link to="/list" onClick={goToActivityIcon}>
-                        <img src={Botao}/>
-                    </Link>
-                </Col>
-                <Col>
-                    <img src={Botao}/>
-                </Col>
-            </Row>
+            <Container>
+                <Row className="fileRow3">                
+                    <Col>
+                        <Link to="/list" onClick={goToActivityIcon}>
+                            <img src={Btn_AI}/>
+                        </Link>
+                    </Col>
+                    <Col>
+                        <img src={Btn_Audio}/>
+                    </Col>
+                </Row>
 
-            <Row className="fileRow2">                
-                <Col>
-                    <img src={Botao}/>
-                </Col>
-                <Col>
-                    <img src={Botao}/>
-                </Col>
-            </Row>
+                <Row className="fileRow3">                
+                    <Col>
+                        <img src={Btn_Video}/>
+                    </Col>
+                    <Col>
+                        <img src={Btn_Image}/>
+                    </Col>
+                </Row>
+            </Container>
         </Container>
 
     );

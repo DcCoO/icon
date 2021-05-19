@@ -10,6 +10,18 @@ const firebaseConfig = {
   appId: "1:383614351849:web:54aba39027d5247c393378"
 };
 
+/*
+const firebaseConfig = {
+	"apiKey": "AIzaSyBKVVBcUrqYjOcNrZIB1PWpplw0vBCtoBs",
+	"authDomain": "redballoon-redjunior.firebaseapp.com",
+	"databaseURL": "https://redballoon-redjunior.firebaseio.com",
+	"projectId": "redballoon-redjunior",
+	"storageBucket": "redballoon-redjunior.appspot.com",
+	"messagingSenderId": "206080050985"
+
+};
+*/
+
 firebase.initializeApp(firebaseConfig);
 
 const storage = firebase.storage();
